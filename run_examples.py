@@ -122,6 +122,14 @@ def contextful(**kwargs):
 
 @cli.command()
 @common_options
+def findDiscounts(**kwargs):
+    from examples.find_discounts import run
+
+    return run(**kwargs)
+
+
+@cli.command()
+@common_options
 def contextful_s3(**kwargs):
     from examples.pipelines.contextful_s3 import run
 
