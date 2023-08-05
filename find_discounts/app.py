@@ -55,7 +55,7 @@ def concat_with_titles(*args) -> str:
 
 def run(
     *,
-    data_dir: str = os.environ.get("PATHWAY_DATA_DIR", "./examples/pipelines/find_discounts/data/discounts"),
+    data_dir: str = os.environ.get("PATHWAY_DATA_DIR", "./find_discounts/data/discounts"),
     api_key: str = os.environ.get("OPENAI_API_TOKEN", ""),
     host: str = "0.0.0.0",
     port: int = 8080,
